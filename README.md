@@ -9,6 +9,8 @@
       a /= b     -- a = a / b
       a ^= b     -- a = a ^ b
       a %= b     -- a = a % b
+      a &= b     -- a = a and b
+      a |= b     -- a = a or b
       a++        -- a = a + 1
       a--        -- a = a - 1
 
@@ -21,6 +23,7 @@ meta.lua is the actual script, and main.lua and game.lua are an example for LÖV
     require("meta")
 
 Then prepend "meta-" before any files that need this library, so, in the example:
+
     require("game")
     --becomes
     require("meta-game")
