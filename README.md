@@ -9,8 +9,8 @@
       a /= b     -- a = a / b
       a ^= b     -- a = a ^ b
       a %= b     -- a = a % b
-      a &= b     -- a = a and b
-      a |= b     -- a = a or b
+      a &&= b    -- a = a and b
+      a ||= b    -- a = a or b
       a++        -- a = a + 1
       a--        -- a = a - 1
 
