@@ -23,6 +23,8 @@ local substitionrules = {
 	[varname .. "%s*/="] = "%1 = %1 / ",
 	[varname .. "%s*^="] = "%1 = %1 ^ ",
 	[varname .. "%s*%%="] = "%1 = %1 %% ",
+	[varname .. "%s*&="] = "%1 = %1 and ",
+	[varname .. "%s*|="] = "%1 = %1 or ",
 	[varname .. "%+%+"] = "%1 = %1 + 1",
 	[varname .. "%-%-"] = "%1 = %1 - 1"
 }

@@ -15,3 +15,12 @@
 ###Files###
 
 meta.lua is the actual script, and main.lua and game.lua are an example for LÖVE.
+
+###Usage###
+
+    require("meta")
+
+Then prepend "meta-" before any files that need this library, so, in the example:
+    require("game")
+    --becomes
+    require("meta-game")
