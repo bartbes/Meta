@@ -22,8 +22,11 @@ meta.lua is the actual script, and main.lua and game.lua are an example for LÖV
 
     require("meta")
 
-Then prepend "meta-" before any files that need this library, so, in the example:
+Then you can use require to load mlua files, so in the example:
 
+    --for game.lua
     require("game")
-    --becomes
-    require("meta-game")
+    --and for game.mlua, still
+    require("game")
+
+Note that normal lua files take precedence over mlua files.

@@ -1,2 +1,2 @@
 require "meta"
-require "meta-game"
+require "game"

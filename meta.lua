@@ -30,9 +30,7 @@ local substitionrules = {
 }
 
 table.insert(package.loaders, function(name)
-	name = name:match("^meta%-(.+)$")
-	if not name then return nil end
-	local tokenized_name = name:gsub("%.", "/") .. ".lua"
+	local tokenized_name = name:gsub("%.", "/") .. ".mlua"
 	local contents = readfile(tokenized_name)
 	if not contents then return nil end
 	for i, v in pairs(substitionrules) do
