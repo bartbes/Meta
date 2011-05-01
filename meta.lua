@@ -17,6 +17,8 @@ end
 local varname = "([%w%d%.:%[%]]+)"
 
 local substitionrules = {
+	[varname .. "&="] = "%1 = %1 and"
+	[varname .. "|="] = "%1 = %1 or"
 	[varname .. "%s*%+="] = "%1 = %1 + ",
 	[varname .. "%s*%-="] = "%1 = %1 - ",
 	[varname .. "%s*%*="] = "%1 = %1 * ",
