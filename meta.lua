@@ -36,6 +36,6 @@ table.insert(package.loaders, function(name)
 	for i, v in pairs(substitionrules) do
 		contents = contents:gsub(i, v)
 	end
-	return loadstring(contents)
+	return assert(loadstring(contents, tokenized_name))
 end)
 
