@@ -14,7 +14,7 @@ else
 	end
 end
 
-local varname = "([%w%d%.:%[%]]+)"
+local varname = "([%w%d%.:_%[%]]+)"
 
 local substitionrules = {
 	[varname .. "%s*%+="] = "%1 = %1 + ",
